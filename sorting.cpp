@@ -35,6 +35,9 @@ public:
             return;
         }
 
+        //TODO: handle signed numbers
+
+        //skip sign bit
         return radix_binary_msd_impl(nums, 0, nums.size()-1, (~((UINT_MAX<<1)>>1))>>1);
     }
 
